@@ -1038,9 +1038,34 @@ select {
     border-radius: 28px;
   }
 
+  /* Keep the culture-card headline clear of the floating badge on phones. */
+  .hero-card-main {
+    inset: 62px 24px 72px;
+  }
+
   .team-orbit {
-    transform: scale(0.78);
-    margin-bottom: 5px;
+    width: 210px;
+    height: 210px;
+    transform: scale(0.82);
+    margin-bottom: -8px;
+    flex: 0 0 210px;
+  }
+
+  .hero-card-main p {
+    position: relative;
+    z-index: 3;
+    margin-top: 0;
+  }
+
+  .badge-two {
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .hero-card-footer {
+    right: 20px;
+    bottom: 7px;
+    left: 20px;
   }
 
   .intro-section,
