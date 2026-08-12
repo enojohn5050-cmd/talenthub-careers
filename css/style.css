@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
 
-/* =========================
-   ROOT VARIABLES
-========================= */
+
 :root {
   --primary: #5b4bff;
   --primary-dark: #4638d9;
@@ -24,9 +22,6 @@
   --transition: 220ms ease;
 }
 
-/* =========================
-   RESET
-========================= */
 *,
 *::before,
 *::after {
@@ -68,17 +63,12 @@ button {
   border: 0;
 }
 
-/* =========================
-   GLOBAL CONTAINER
-========================= */
 .container {
   width: min(100% - 40px, var(--max-width));
   margin-inline: auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+
 .site-header {
   position: sticky;
   top: 0;
@@ -157,9 +147,7 @@ button {
   right: 0;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+
 .header-cta,
 .primary-button,
 .submit-button {
@@ -194,9 +182,7 @@ button {
   box-shadow: 0 12px 26px rgba(91, 75, 255, 0.24);
 }
 
-/* =========================
-   HERO
-========================= */
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -302,9 +288,6 @@ h3 {
   font-size: 0.78rem;
 }
 
-/* =========================
-   HERO CARD
-========================= */
 .hero-card {
   position: relative;
   min-height: 520px;
@@ -456,9 +439,6 @@ h3 {
   letter-spacing: 0.12em;
 }
 
-/* =========================
-   INTRO + BENEFITS
-========================= */
 .intro-section,
 .roles-section {
   padding: 110px 0;
@@ -535,9 +515,6 @@ h3 {
   font-size: 0.9rem;
 }
 
-/* =========================
-   ROLES
-========================= */
 .roles-section {
   background: var(--surface-soft);
 }
@@ -628,9 +605,6 @@ h3 {
   font-weight: 800;
 }
 
-/* =========================
-   APPLICATION
-========================= */
 .application-section {
   padding: 120px 0;
   background:
@@ -929,9 +903,6 @@ select {
   font-size: 0.82rem;
 }
 
-/* =========================
-   FOOTER
-========================= */
 .site-footer {
   padding: 36px 0;
   border-top: 1px solid var(--line);
@@ -965,9 +936,6 @@ select {
   outline-offset: 3px;
 }
 
-/* =========================
-   TABLET
-========================= */
 @media (max-width: 900px) {
   .main-nav {
     display: none;
@@ -1006,9 +974,6 @@ select {
   }
 }
 
-/* =========================
-   MOBILE
-========================= */
 @media (max-width: 640px) {
   .container {
     width: min(100% - 28px, var(--max-width));
@@ -1025,10 +990,12 @@ select {
   .hero {
     padding: 68px 0 75px;
   }
-
-  .hero h1 {
-    font-size: clamp(2.8rem, 14vw, 4.2rem);
-  }
+.hero h1 {
+  max-width: 100%;
+  font-size: clamp(2.45rem, 11vw, 3.5rem);
+  line-height: 1.02;
+  overflow-wrap: break-word;
+}
 
   .hero-actions,
   .hero-meta,
